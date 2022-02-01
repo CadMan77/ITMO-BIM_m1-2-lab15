@@ -1,0 +1,80 @@
+﻿<Window x:Class="ITMO_BIM_m1_2_lab15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITMO_BIM_m1_2_lab15"
+        mc:Ignorable="d"
+        Title="О Б Ъ Я В Л Е Н И Е "   Height="400" Width="420">
+    <Grid>
+        <FlowDocumentReader>
+            <FlowDocument>
+                <Paragraph Foreground="DarkGreen">
+                    22 июня 2022 г. В помещении клуба «Картонажник» состоится
+                    <Span Foreground="Black">лекция на тему: <Bold>«Плодотворная дебютная идея»</Bold> и <Italic>Сеанс одновременной игры</Italic>
+                    </Span> в шахматы на 160 досках гроссмейстера (старший мастер) О. Бендерова.
+                </Paragraph>
+
+                <!--Не придумал как отцентровать таблицу-->
+                <Table TextAlignment="Center" Background="LightGray">
+                    <!--BorderThickness="2" BorderBrush="Black"  >-->
+                    <Table.Columns>
+                        <TableColumn Width="80" />
+                        <TableColumn Width="80" />
+                    </Table.Columns>
+                    <TableRowGroup> <!--назначение непонятно-->
+                        <TableRow>
+                            <TableCell ColumnSpan="2">
+                                <Paragraph>
+                                    Плата, тыс.руб
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Вход:
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    20
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Игра:
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    50
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+
+                <List MarkerStyle="Disc" >
+                    <ListItem>
+                        <Paragraph>
+                            Все приходят со своими досками.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Начало ровно в 6 час. веч.
+                        </Paragraph>
+                    </ListItem>                                       
+                </List>
+                <Paragraph TextAlignment="Right">
+                    <Underline>Администратор К. Михельсонов."</Underline>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</Window>
